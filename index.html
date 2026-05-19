@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>M.I.A. · Mercado Inteligente Asistido</title>
 
-  <!-- Bootswatch (Bootstrap 5 con tema "Lux") -->
+  <!-- Bootswatch (Bootstrap 5 con tema Lux) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-  <!-- AOS (animaciones al hacer scroll) -->
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
-  <!-- Tu CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,15 +25,18 @@
       <a class="navbar-brand fw-bold" href="#">
         <i class="bi bi-bag-check-fill me-1"></i> M.I.A.
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
           <li class="nav-item"><a class="nav-link" href="#modulos">Módulos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#diccionario">Diccionario</a></li>
+          <li class="nav-item"><a class="nav-link" href="#semestres">Semestres</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diccionario">Diccionarios</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -41,182 +44,433 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero d-flex align-items-center text-light text-center" style="background: linear-gradient(135deg, #1B263B, #415A77); padding: 100px 0;">
+  <header class="hero d-flex align-items-center text-light text-center"
+    style="background: linear-gradient(135deg, #1B263B, #415A77); padding: 100px 0;">
+
     <div class="container" data-aos="fade-up">
-      <h1 class="display-5 fw-bold mb-3">M.I.A. — Mercado Inteligente Asistido</h1>
+      <h1 class="display-5 fw-bold mb-3">
+        M.I.A. — Mercado Inteligente Asistido
+      </h1>
+
       <p class="lead mb-4">
-        Una aplicación creada por estudiantes para ayudarte a organizar tu mercado, controlar tu inventario y recibir recomendaciones con IA.
+        Una aplicación creada por estudiantes para ayudarte a organizar tu mercado,
+        controlar tu inventario y recibir recomendaciones con IA.
       </p>
-      <a href="#sobre" class="btn btn-light btn-lg me-2">Conocer M.I.A.</a>
-      <a href="#equipo" class="btn btn-outline-light btn-lg">Ver equipo</a>
+
+      <a href="#sobre" class="btn btn-light btn-lg me-2">
+        Conocer M.I.A.
+      </a>
+
+      <a href="#equipo" class="btn btn-outline-light btn-lg">
+        Ver equipo
+      </a>
     </div>
   </header>
 
   <!-- SOBRE -->
   <section id="sobre" class="py-5 bg-light">
+
     <div class="container">
+
       <div class="text-center mb-5" data-aos="fade-up">
         <h2 class="fw-bold">¿Qué es M.I.A.?</h2>
+
         <p class="text-muted">
-          M.I.A. (Mercado Inteligente Asistido) busca resolver el problema de las listas de mercado que no se actualizan,
-          ayudando al usuario a saber qué tiene en casa, qué se va a vencer y qué debería comprar.
+          M.I.A. (Mercado Inteligente Asistido) busca resolver el problema de las listas
+          de mercado que no se actualizan, ayudando al usuario a saber qué tiene en casa,
+          qué se va a vencer y qué debería comprar.
         </p>
       </div>
 
       <div class="row g-4">
+
+        <!-- CARD 1 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="card h-100 shadow-sm border-0 text-center">
             <div class="card-body">
+
               <i class="bi bi-box-seam fs-1 text-primary mb-3"></i>
+
               <h5>Inventario del hogar</h5>
-              <p class="text-muted mb-0">Registrar productos, cantidades y fechas de vencimiento de forma sencilla.</p>
+
+              <p class="text-muted mb-0">
+                Registrar productos, cantidades y fechas de vencimiento de forma sencilla.
+              </p>
+
             </div>
           </div>
         </div>
+
+        <!-- CARD 2 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="card h-100 shadow-sm border-0 text-center">
             <div class="card-body">
+
               <i class="bi bi-bell fs-1 text-primary mb-3"></i>
+
               <h5>Notificaciones útiles</h5>
-              <p class="text-muted mb-0">Alertas cuando algo se va a acabar o se va a vencer.</p>
+
+              <p class="text-muted mb-0">
+                Alertas cuando algo se va a acabar o se va a vencer.
+              </p>
+
             </div>
           </div>
         </div>
+
+        <!-- CARD 3 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
           <div class="card h-100 shadow-sm border-0 text-center">
             <div class="card-body">
+
               <i class="bi bi-robot fs-1 text-primary mb-3"></i>
+
               <h5>IA para sugerencias</h5>
-              <p class="text-muted mb-0">Recomendaciones según tu perfil: personal o familiar.</p>
+
+              <p class="text-muted mb-0">
+                Recomendaciones según tu perfil: personal o familiar.
+              </p>
+
             </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
   <!-- EQUIPO -->
   <section id="equipo" class="py-5">
+
     <div class="container">
+
       <div class="text-center mb-5" data-aos="fade-up">
         <h2 class="fw-bold">Equipo del proyecto</h2>
-        <p class="text-muted">Versión académica — Tecnología en Desarrollo de Software</p>
+        <p class="text-muted">
+          Versión académica — Tecnología en Desarrollo de Software
+        </p>
       </div>
 
       <div class="row g-4 justify-content-center">
+
         <!-- Nicole -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="card team-card h-100 text-center shadow-sm">
-            <img src="img/nicole.png" alt="Nicole Lamprea" class="team-img img-fluid rounded">
+
+            <img src="img/nicole.png"
+              alt="Nicole Lamprea"
+              class="team-img img-fluid rounded">
+
             <div class="card-body">
               <h4 class="card-title">Nicole Lamprea</h4>
+
               <p class="card-text text-muted small">
                 Creación y soporte de la base de datos para M.I.A.
               </p>
             </div>
+
           </div>
         </div>
 
-        <!-- Neyder (centro) -->
+        <!-- Neyder -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="card team-card h-100 text-center shadow-sm border-success border-2">
-            <img src="img/neyder.png" alt="Neyder Arenas" class="team-img img-fluid rounded">
+
+            <img src="img/neyder.png"
+              alt="Neyder Arenas"
+              class="team-img img-fluid rounded">
+
             <div class="card-body">
               <h4 class="card-title text-success">Neyder Arenas</h4>
+
               <p class="card-text text-muted small">
                 Desarrollo del código, documentación y liderazgo técnico del proyecto M.I.A.
               </p>
             </div>
+
           </div>
         </div>
 
         <!-- Camilo -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="card team-card h-100 text-center shadow-sm">
-            <img src="img/camilo.png" alt="Camilo Cuesta" class="team-img img-fluid rounded">
+
+            <img src="img/camilo.png"
+              alt="Camilo Cuesta"
+              class="team-img img-fluid rounded">
+
             <div class="card-body">
               <h4 class="card-title">Camilo Cuesta</h4>
+
               <p class="card-text text-muted small">
-                Aportó ideas y referencias de aplicaciones, ayudando a definir el flujo funcional.
+                Aportó ideas y referencias de aplicaciones,
+                ayudando a definir el flujo funcional.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULOS -->
+  <section id="modulos" class="py-5 bg-light">
+
+    <div class="container">
+
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">Módulos principales</h2>
+
+        <p class="text-muted">
+          Lo mínimo que tendrá el MVP de M.I.A.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- MODULO 1 -->
+        <div class="col-md-4" data-aos="fade-right">
+          <div class="card h-100 border-0 shadow-sm">
+
+            <div class="card-body">
+
+              <h5>
+                <i class="bi bi-ui-checks-grid me-2 text-primary"></i>
+                Gestión de inventario
+              </h5>
+
+              <p class="text-muted mb-0">
+                Registrar, editar y eliminar productos del hogar.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- MODULO 2 -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm">
+
+            <div class="card-body">
+
+              <h5>
+                <i class="bi bi-list-check me-2 text-primary"></i>
+                Listas inteligentes
+              </h5>
+
+              <p class="text-muted mb-0">
+                Crear listas según lo que hay y lo que falta.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- MODULO 3 -->
+        <div class="col-md-4" data-aos="fade-left">
+          <div class="card h-100 border-0 shadow-sm">
+
+            <div class="card-body">
+
+              <h5>
+                <i class="bi bi-bar-chart-line me-2 text-primary"></i>
+                Historial y consumo
+              </h5>
+
+              <p class="text-muted mb-0">
+                Ver qué compra más la familia y qué se desperdicia.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEMESTRES -->
+  <section id="semestres" class="py-5 bg-white">
+
+    <div class="container">
+
+      <div class="text-center mb-5" data-aos="fade-up">
+
+        <h2 class="fw-bold">Evolución por Semestres</h2>
+
+        <p class="text-muted">
+          Desarrollo académico y evolución del proyecto M.I.A.
+        </p>
+
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Semestre 1 -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="text-primary">Semestre 1</h4>
+
+              <p class="text-muted">
+                Inicio de fundamentos de programación y análisis de necesidades del proyecto.
               </p>
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- MÓDULOS -->
-  <section id="modulos" class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-4" data-aos="fade-up">
-        <h2 class="fw-bold">Módulos principales</h2>
-        <p class="text-muted">Lo mínimo que tendrá el MVP de M.I.A.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-right">
-          <div class="card h-100 border-0 shadow-sm">
+        <!-- Semestre 2 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm border-0">
             <div class="card-body">
-              <h5><i class="bi bi-ui-checks-grid me-2 text-primary"></i>Gestión de inventario</h5>
-              <p class="text-muted mb-0">Registrar, editar y eliminar productos del hogar.</p>
+              <h4 class="text-primary">Semestre 2</h4>
+
+              <p class="text-muted">
+                Diseño inicial de la base de datos y estructura lógica del sistema.
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Semestre 3 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="text-primary">Semestre 3</h4>
+
+              <p class="text-muted">
+                Desarrollo de módulos principales y validaciones básicas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semestre 4 -->
         <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-0 shadow-sm">
+          <div class="card h-100 shadow-sm border-0">
             <div class="card-body">
-              <h5><i class="bi bi-list-check me-2 text-primary"></i>Listas inteligentes</h5>
-              <p class="text-muted mb-0">Crear listas según lo que hay y lo que falta.</p>
+              <h4 class="text-primary">Semestre 4</h4>
+
+              <p class="text-muted">
+                Integración de funcionalidades inteligentes y mejoras visuales.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-left">
-          <div class="card h-100 border-0 shadow-sm">
+
+        <!-- Semestre 5 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm border-0">
             <div class="card-body">
-              <h5><i class="bi bi-bar-chart-line me-2 text-primary"></i>Historial y consumo</h5>
-              <p class="text-muted mb-0">Ver qué compra más la familia y qué se desperdicia.</p>
+              <h4 class="text-primary">Semestre 5</h4>
+
+              <p class="text-muted">
+                Optimización del sistema, pruebas y documentación técnica.
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Semestre 6 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="text-primary">Semestre 6</h4>
+
+              <p class="text-muted">
+                Presentación final del proyecto integrador y mejoras futuras.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- DICCIONARIO -->
-  <section id="diccionario" class="py-5 text-center bg-white">
+  <!-- DICCIONARIOS -->
+  <section id="diccionario" class="py-5 text-center bg-light">
+
     <div class="container" data-aos="fade-up">
-      <h2 class="fw-bold mb-3">Diccionario de Datos</h2>
-      <p class="text-muted mb-4">Consulta el diccionario de base de datos utilizado en M.I.A.</p>
-      <a href="data/diccionario.html" target="_blank" class="btn btn-success">
-        <i class="bi bi-journal-text me-2"></i> Abrir Diccionario
-      </a>
+
+      <h2 class="fw-bold mb-3">
+        Diccionarios de Datos
+      </h2>
+
+      <p class="text-muted mb-4">
+        Consulta los diccionarios utilizados en M.I.A.
+      </p>
+
+      <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+
+        <!-- Diccionario 1 -->
+        <a href="data/diccionario.html"
+          target="_blank"
+          class="btn btn-success btn-lg">
+
+          <i class="bi bi-journal-text me-2"></i>
+          Abrir Diccionario 1
+        </a>
+
+        <!-- Diccionario 2 -->
+        <a href="data/diccionario2.html"
+          target="_blank"
+          class="btn btn-primary btn-lg">
+
+          <i class="bi bi-book me-2"></i>
+          Abrir Diccionario 2
+        </a>
+
+      </div>
+
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="py-5 text-center" style="background-color: #0f172a;">
+  <section id="contacto"
+    class="py-5 text-center"
+    style="background-color: #0f172a;">
+
     <div class="container" data-aos="fade-up">
-      <h2 class="text-light mb-3">Contacto</h2>
-      <p class="text-light mb-4">¿Quieres saber más del proyecto o proponer mejoras?</p>
-      <a href="mailto:narenasb@academia.usbbog.edu.co" class="btn btn-success">
-        <i class="bi bi-envelope me-1"></i> Escribir al equipo
+
+      <h2 class="text-light mb-3">
+        Contacto
+      </h2>
+
+      <p class="text-light mb-4">
+        ¿Quieres saber más del proyecto o proponer mejoras?
+      </p>
+
+      <a href="mailto:narenasb@academia.usbbog.edu.co"
+        class="btn btn-success">
+
+        <i class="bi bi-envelope me-1"></i>
+        Escribir al equipo
       </a>
+
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="bg-dark text-center text-light py-3">
-    <p class="mb-0">© <span id="year"></span> M.I.A. · Proyecto Integrador</p>
+    <p class="mb-0">
+      © <span id="year"></span> M.I.A. · Proyecto Integrador
+    </p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
   <script>
     AOS.init();
-    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
 </html>
