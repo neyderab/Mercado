@@ -1,476 +1,793 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>M.I.A. · Mercado Inteligente Asistido</title>
 
-  <!-- Bootswatch (Bootstrap 5 con tema Lux) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>M.I.A. | Mercado Inteligente Asistido</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
 
   <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
     <div class="container">
+
       <a class="navbar-brand fw-bold" href="#">
-        <i class="bi bi-bag-check-fill me-1"></i> M.I.A.
+        <i class="bi bi-cpu-fill me-2"></i>
+        M.I.A.
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+
         <span class="navbar-toggler-icon"></span>
+
       </button>
 
       <div class="collapse navbar-collapse" id="menu">
+
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
-          <li class="nav-item"><a class="nav-link" href="#modulos">Módulos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#semestres">Semestres</a></li>
-          <li class="nav-item"><a class="nav-link" href="#diccionario">Diccionarios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Funciones</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#equipo">Equipo</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#semestres">Semestres</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#diccionario">Diccionarios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+
         </ul>
+
       </div>
+
     </div>
+
   </nav>
 
-  <!-- HERO -->
-  <header class="hero d-flex align-items-center text-light text-center"
-    style="background: linear-gradient(135deg, #1B263B, #415A77); padding: 100px 0;">
+  <!-- =========================================
+       HERO
+  ========================================== -->
 
-    <div class="container" data-aos="fade-up">
-      <h1 class="display-5 fw-bold mb-3">
-        M.I.A. — Mercado Inteligente Asistido
-      </h1>
+  <header class="hero">
 
-      <p class="lead mb-4">
-        Una aplicación creada por estudiantes para ayudarte a organizar tu mercado,
-        controlar tu inventario y recibir recomendaciones con IA.
-      </p>
+    <div class="hero-overlay"></div>
 
-      <a href="#sobre" class="btn btn-light btn-lg me-2">
-        Conocer M.I.A.
-      </a>
+    <div class="container position-relative">
 
-      <a href="#equipo" class="btn btn-outline-light btn-lg">
-        Ver equipo
-      </a>
+      <div class="row align-items-center min-vh-100">
+
+        <div class="col-lg-7 text-center text-lg-start"
+          data-aos="fade-right">
+
+          <span class="badge bg-success px-3 py-2 mb-3">
+            Proyecto Integrador 2026
+          </span>
+
+          <h1 class="hero-title">
+            M.I.A.
+            <span>Mercado Inteligente Asistido</span>
+          </h1>
+
+          <p class="hero-text">
+
+            Una aplicación inteligente creada por estudiantes
+            para organizar tu inventario, optimizar tu mercado
+            y ayudarte con recomendaciones basadas en IA.
+
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+
+            <a href="#sobre" class="btn btn-success btn-lg">
+              <i class="bi bi-stars me-2"></i>
+              Explorar Proyecto
+            </a>
+
+            <a href="#equipo" class="btn btn-outline-light btn-lg">
+              <i class="bi bi-people-fill me-2"></i>
+              Ver Equipo
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-5 text-center"
+          data-aos="zoom-in">
+
+          <div class="floating-card">
+
+            <i class="bi bi-phone-fill phone-icon"></i>
+
+            <h3>Smart Market App</h3>
+
+            <p>
+              Tecnología, IA y automatización
+              para el hogar moderno.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
+
   </header>
 
-  <!-- SOBRE -->
-  <section id="sobre" class="py-5 bg-light">
+  <!-- =========================================
+       SOBRE
+  ========================================== -->
+
+  <section id="sobre">
 
     <div class="container">
 
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="fw-bold">¿Qué es M.I.A.?</h2>
+      <div class="section-title text-center"
+        data-aos="fade-up">
 
-        <p class="text-muted">
-          M.I.A. (Mercado Inteligente Asistido) busca resolver el problema de las listas
-          de mercado que no se actualizan, ayudando al usuario a saber qué tiene en casa,
-          qué se va a vencer y qué debería comprar.
+        <span class="section-badge">
+          SOBRE M.I.A.
+        </span>
+
+        <h2>
+          ¿Qué hace especial a M.I.A.?
+        </h2>
+
+        <p>
+          Diseñado para facilitar la administración
+          de productos del hogar utilizando automatización,
+          inteligencia artificial y análisis inteligente.
         </p>
+
       </div>
 
-      <div class="row g-4">
+      <div class="row g-4 mt-4">
 
         <!-- CARD 1 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow-sm border-0 text-center">
-            <div class="card-body">
 
-              <i class="bi bi-box-seam fs-1 text-primary mb-3"></i>
+        <div class="col-md-4"
+          data-aos="fade-up"
+          data-aos-delay="100">
 
-              <h5>Inventario del hogar</h5>
+          <div class="info-card">
 
-              <p class="text-muted mb-0">
-                Registrar productos, cantidades y fechas de vencimiento de forma sencilla.
-              </p>
-
+            <div class="icon-box">
+              <i class="bi bi-box-seam"></i>
             </div>
+
+            <h4>
+              Inventario Inteligente
+            </h4>
+
+            <p>
+              Controla cantidades, productos,
+              fechas de vencimiento y organización.
+            </p>
+
           </div>
+
         </div>
 
         <!-- CARD 2 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 shadow-sm border-0 text-center">
-            <div class="card-body">
 
-              <i class="bi bi-bell fs-1 text-primary mb-3"></i>
+        <div class="col-md-4"
+          data-aos="fade-up"
+          data-aos-delay="200">
 
-              <h5>Notificaciones útiles</h5>
+          <div class="info-card">
 
-              <p class="text-muted mb-0">
-                Alertas cuando algo se va a acabar o se va a vencer.
-              </p>
-
+            <div class="icon-box">
+              <i class="bi bi-bell-fill"></i>
             </div>
+
+            <h4>
+              Alertas Automáticas
+            </h4>
+
+            <p>
+              Notificaciones cuando un producto
+              está por agotarse o vencer.
+            </p>
+
           </div>
+
         </div>
 
         <!-- CARD 3 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 shadow-sm border-0 text-center">
-            <div class="card-body">
 
-              <i class="bi bi-robot fs-1 text-primary mb-3"></i>
+        <div class="col-md-4"
+          data-aos="fade-up"
+          data-aos-delay="300">
 
-              <h5>IA para sugerencias</h5>
+          <div class="info-card">
 
-              <p class="text-muted mb-0">
-                Recomendaciones según tu perfil: personal o familiar.
-              </p>
-
+            <div class="icon-box">
+              <i class="bi bi-robot"></i>
             </div>
+
+            <h4>
+              IA Integrada
+            </h4>
+
+            <p>
+              Recomendaciones inteligentes
+              según hábitos de consumo.
+            </p>
+
           </div>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- EQUIPO -->
-  <section id="equipo" class="py-5">
+  <!-- =========================================
+       FUNCIONES
+  ========================================== -->
+
+  <section id="features" class="dark-section">
 
     <div class="container">
 
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="fw-bold">Equipo del proyecto</h2>
-        <p class="text-muted">
-          Versión académica — Tecnología en Desarrollo de Software
-        </p>
+      <div class="section-title text-center text-light"
+        data-aos="fade-up">
+
+        <span class="section-badge">
+          FUNCIONES
+        </span>
+
+        <h2>
+          Características principales
+        </h2>
+
       </div>
 
-      <div class="row g-4 justify-content-center">
+      <div class="row g-4 mt-4">
+
+        <div class="col-lg-3 col-md-6"
+          data-aos="zoom-in">
+
+          <div class="feature-card">
+
+            <i class="bi bi-cart-check-fill"></i>
+
+            <h5>
+              Gestión de Mercado
+            </h5>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="100">
+
+          <div class="feature-card">
+
+            <i class="bi bi-graph-up-arrow"></i>
+
+            <h5>
+              Estadísticas
+            </h5>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="200">
+
+          <div class="feature-card">
+
+            <i class="bi bi-cloud-check-fill"></i>
+
+            <h5>
+              Sincronización
+            </h5>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="300">
+
+          <div class="feature-card">
+
+            <i class="bi bi-cpu-fill"></i>
+
+            <h5>
+              IA Predictiva
+            </h5>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================
+       EQUIPO
+  ========================================== -->
+
+  <section id="equipo">
+
+    <div class="container">
+
+      <div class="section-title text-center"
+        data-aos="fade-up">
+
+        <span class="section-badge">
+          EQUIPO
+        </span>
+
+        <h2>
+          Desarrolladores del Proyecto
+        </h2>
+
+      </div>
+
+      <div class="row justify-content-center g-4 mt-4">
 
         <!-- Nicole -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card team-card h-100 text-center shadow-sm">
+
+        <div class="col-lg-4 col-md-6"
+          data-aos="flip-left">
+
+          <div class="team-card">
 
             <img src="img/nicole.png"
-              alt="Nicole Lamprea"
-              class="team-img img-fluid rounded">
+              class="team-img"
+              alt="Nicole">
 
-            <div class="card-body">
-              <h4 class="card-title">Nicole Lamprea</h4>
+            <div class="team-info">
 
-              <p class="card-text text-muted small">
-                Creación y soporte de la base de datos para M.I.A.
+              <h4>
+                Nicole Lamprea
+              </h4>
+
+              <p>
+                Base de datos y soporte técnico.
               </p>
+
             </div>
 
           </div>
+
         </div>
 
         <!-- Neyder -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card team-card h-100 text-center shadow-sm border-success border-2">
+
+        <div class="col-lg-4 col-md-6"
+          data-aos="flip-up">
+
+          <div class="team-card featured-card">
+
+            <div class="featured-badge">
+              Líder
+            </div>
 
             <img src="img/neyder.png"
-              alt="Neyder Arenas"
-              class="team-img img-fluid rounded">
+              class="team-img"
+              alt="Neyder">
 
-            <div class="card-body">
-              <h4 class="card-title text-success">Neyder Arenas</h4>
+            <div class="team-info">
 
-              <p class="card-text text-muted small">
-                Desarrollo del código, documentación y liderazgo técnico del proyecto M.I.A.
+              <h4>
+                Neyder Arenas
+              </h4>
+
+              <p>
+                Desarrollo, documentación
+                y liderazgo técnico.
               </p>
+
             </div>
 
           </div>
+
         </div>
 
         <!-- Camilo -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="card team-card h-100 text-center shadow-sm">
+
+        <div class="col-lg-4 col-md-6"
+          data-aos="flip-right">
+
+          <div class="team-card">
 
             <img src="img/camilo.png"
-              alt="Camilo Cueto"
-              class="team-img img-fluid rounded">
+              class="team-img"
+              alt="Camilo">
 
-            <div class="card-body">
-              <h4 class="card-title">Camilo Cueto</h4>
+            <div class="team-info">
 
-              <p class="card-text text-muted small">
-                Aportó ideas y referencias de aplicaciones,
-                ayudando a definir el flujo funcional.
+              <h4>
+                Camilo Cueto
+              </h4>
+
+              <p>
+                Ideas funcionales y análisis UX.
               </p>
+
             </div>
 
           </div>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- MODULOS -->
-  <section id="modulos" class="py-5 bg-light">
+  <!-- =========================================
+       SEMESTRES
+  ========================================== -->
+
+  <section id="semestres" class="semester-section">
 
     <div class="container">
 
-      <div class="text-center mb-4" data-aos="fade-up">
-        <h2 class="fw-bold">Módulos principales</h2>
+      <div class="section-title text-center text-light"
+        data-aos="fade-up">
 
-        <p class="text-muted">
-          Lo mínimo que tendrá el MVP de M.I.A.
-        </p>
-      </div>
+        <span class="section-badge">
+          EVOLUCIÓN
+        </span>
 
-      <div class="row g-4">
-
-        <!-- MODULO 1 -->
-        <div class="col-md-4" data-aos="fade-right">
-          <div class="card h-100 border-0 shadow-sm">
-
-            <div class="card-body">
-
-              <h5>
-                <i class="bi bi-ui-checks-grid me-2 text-primary"></i>
-                Gestión de inventario
-              </h5>
-
-              <p class="text-muted mb-0">
-                Registrar, editar y eliminar productos del hogar.
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- MODULO 2 -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-0 shadow-sm">
-
-            <div class="card-body">
-
-              <h5>
-                <i class="bi bi-list-check me-2 text-primary"></i>
-                Listas inteligentes
-              </h5>
-
-              <p class="text-muted mb-0">
-                Crear listas según lo que hay y lo que falta.
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- MODULO 3 -->
-        <div class="col-md-4" data-aos="fade-left">
-          <div class="card h-100 border-0 shadow-sm">
-
-            <div class="card-body">
-
-              <h5>
-                <i class="bi bi-bar-chart-line me-2 text-primary"></i>
-                Historial y consumo
-              </h5>
-
-              <p class="text-muted mb-0">
-                Ver qué compra más la familia y qué se desperdicia.
-              </p>
-
-            </div>
-          </div>
-        </div>
+        <h2>
+          Roadmap Académico
+        </h2>
 
       </div>
+
+      <div class="timeline">
+
+        <!-- SEMESTRE 1 -->
+
+        <div class="timeline-card"
+          data-aos="fade-right">
+
+          <div class="semester-number">
+            1
+          </div>
+
+          <div class="timeline-content">
+
+            <i class="bi bi-code-slash"></i>
+
+            <h4>
+              Semestre 1
+            </h4>
+
+            <p>
+              Fundamentos de programación
+              y análisis del problema.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SEMESTRE 2 -->
+
+        <div class="timeline-card"
+          data-aos="fade-left">
+
+          <div class="semester-number">
+            2
+          </div>
+
+          <div class="timeline-content">
+
+            <i class="bi bi-database-fill"></i>
+
+            <h4>
+              Semestre 2
+            </h4>
+
+            <p>
+              Diseño de base de datos
+              y estructura lógica.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SEMESTRE 3 -->
+
+        <div class="timeline-card"
+          data-aos="fade-right">
+
+          <div class="semester-number">
+            3
+          </div>
+
+          <div class="timeline-content">
+
+            <i class="bi bi-cpu-fill"></i>
+
+            <h4>
+              Semestre 3
+            </h4>
+
+            <p>
+              Integración de funcionalidades
+              inteligentes.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SEMESTRE 4 -->
+
+        <div class="timeline-card"
+          data-aos="fade-left">
+
+          <div class="semester-number">
+            4
+          </div>
+
+          <div class="timeline-content">
+
+            <i class="bi bi-phone-fill"></i>
+
+            <h4>
+              Semestre 4
+            </h4>
+
+            <p>
+              Optimización visual
+              y experiencia responsive.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SEMESTRE 5 -->
+
+        <div class="timeline-card"
+          data-aos="fade-right">
+
+          <div class="semester-number">
+            5
+          </div>
+
+          <div class="timeline-content">
+
+            <i class="bi bi-robot"></i>
+
+            <h4>
+              Semestre 5
+            </h4>
+
+            <p>
+              IA predictiva
+              y automatización avanzada.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SEMESTRE 6 -->
+
+        <div class="timeline-card"
+          data-aos="fade-left">
+
+          <div class="semester-number">
+            6
+          </div>
+
+          <div class="timeline-content">
+
+            <i class="bi bi-trophy-fill"></i>
+
+            <h4>
+              Semestre 6
+            </h4>
+
+            <p>
+              Proyecto final,
+              pruebas y despliegue.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
+
   </section>
 
-  <!-- SEMESTRES -->
-  <section id="semestres" class="py-5 bg-white">
+  <!-- =========================================
+       DICCIONARIOS
+  ========================================== -->
 
-    <div class="container">
+  <section id="diccionario">
 
-      <div class="text-center mb-5" data-aos="fade-up">
+    <div class="container text-center">
 
-        <h2 class="fw-bold">Evolución por Semestres</h2>
+      <div class="section-title"
+        data-aos="fade-up">
 
-        <p class="text-muted">
-          Desarrollo académico y evolución del proyecto M.I.A.
-        </p>
+        <span class="section-badge">
+          DOCUMENTACIÓN
+        </span>
 
-      </div>
-
-      <div class="row g-4">
-
-        <!-- Semestre 1 -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h4 class="text-primary">Semestre 1</h4>
-
-              <p class="text-muted">
-                Inicio de fundamentos de programación y análisis de necesidades del proyecto.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Semestre 2 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h4 class="text-primary">Semestre 2</h4>
-
-              <p class="text-muted">
-                Diseño inicial de la base de datos y estructura lógica del sistema.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Semestre 3 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h4 class="text-primary">Semestre 3</h4>
-
-              <p class="text-muted">
-                En proceso.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Semestre 4 -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h4 class="text-primary">Semestre 4</h4>
-
-              <p class="text-muted">
-                En proceso.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Semestre 5 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h4 class="text-primary">Semestre 5</h4>
-
-              <p class="text-muted">
-                En proceso.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Semestre 6 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h4 class="text-primary">Semestre 6</h4>
-
-              <p class="text-muted">
-                En proceso.
-              </p>
-            </div>
-          </div>
-        </div>
+        <h2>
+          Diccionarios de Datos
+        </h2>
 
       </div>
-    </div>
-  </section>
 
-  <!-- DICCIONARIOS -->
-  <section id="diccionario" class="py-5 text-center bg-light">
+      <div class="d-flex justify-content-center gap-4 flex-wrap mt-5">
 
-    <div class="container" data-aos="fade-up">
-
-      <h2 class="fw-bold mb-3">
-        Diccionarios de Datos
-      </h2>
-
-      <p class="text-muted mb-4">
-        Consulta los diccionarios utilizados en M.I.A.
-      </p>
-
-      <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-
-        <!-- Diccionario 1 -->
         <a href="data/diccionario.html"
           target="_blank"
           class="btn btn-success btn-lg">
 
           <i class="bi bi-journal-text me-2"></i>
-          Abrir Diccionario 1
+
+          Diccionario 1
+
         </a>
 
-        <!-- Diccionario 2 -->
         <a href="data/diccionario2.html"
           target="_blank"
           class="btn btn-primary btn-lg">
 
-          <i class="bi bi-book me-2"></i>
-          Abrir Diccionario 2
+          <i class="bi bi-book-fill me-2"></i>
+
+          Diccionario 2
+
         </a>
 
       </div>
 
     </div>
+
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto"
-    class="py-5 text-center"
-    style="background-color: #0f172a;">
+  <!-- =========================================
+       CONTACTO
+  ========================================== -->
 
-    <div class="container" data-aos="fade-up">
+  <section id="contacto">
 
-      <h2 class="text-light mb-3">
-        Contacto
+    <div class="container text-center"
+      data-aos="zoom-in">
+
+      <span class="section-badge">
+        CONTACTO
+      </span>
+
+      <h2 class="text-light mb-4">
+
+        ¿Quieres conocer más?
+
       </h2>
 
-      <p class="text-light mb-4">
-        ¿Quieres saber más del proyecto o proponer mejoras?
+      <p class="text-light opacity-75 mb-5">
+
+        Contáctanos para sugerencias,
+        ideas o mejoras del proyecto.
+
       </p>
 
       <a href="mailto:narenasb@academia.usbbog.edu.co"
-        class="btn btn-success">
+        class="btn btn-success btn-lg">
 
-        <i class="bi bi-envelope me-1"></i>
-        Escribir al equipo
+        <i class="bi bi-envelope-fill me-2"></i>
+
+        Contactar Equipo
+
       </a>
 
     </div>
+
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-center text-light py-3">
-    <p class="mb-0">
-      © <span id="year"></span> M.I.A. · Proyecto Integrador
-    </p>
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer>
+
+    <div class="container text-center">
+
+      <p class="mb-0">
+
+        © <span id="year"></span>
+        M.I.A. · Mercado Inteligente Asistido
+
+      </p>
+
+    </div>
+
   </footer>
 
-  <!-- SCRIPTS -->
+  <!-- =========================================
+       SCRIPTS
+  ========================================== -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
   <script>
-    AOS.init();
+
+    AOS.init({
+
+      duration: 1000,
+      once: true
+
+    });
 
     document.getElementById('year').textContent =
       new Date().getFullYear();
+
   </script>
 
 </body>
+
 </html>
