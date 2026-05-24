@@ -1,18 +1,8 @@
-/* =========================================================
-   M.I.A. — MERCADO INTELIGENTE ASISTIDO
-   CSS MODERNO COMPLETO
-   Diseñado para un estilo futurista/académico
-========================================================= */
 
-/* =========================
-   IMPORTS
-========================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-/* =========================
-   VARIABLES
-========================= */
+
 
 :root {
 
@@ -34,9 +24,6 @@
 
 }
 
-/* =========================
-   GENERAL
-========================= */
 
 *{
   margin: 0;
@@ -60,7 +47,6 @@ body{
   position: relative;
 }
 
-/* FONDO DECORATIVO */
 
 body::before{
   content: "";
@@ -79,10 +65,6 @@ body::before{
 
   z-index: -2;
 }
-
-/* =========================
-   NAVBAR
-========================= */
 
 .navbar{
   backdrop-filter: blur(14px);
@@ -126,10 +108,7 @@ body::before{
 .nav-link:hover::after{
   width: 100%;
 }
-
-/* =========================
-   HERO
-========================= */
+/
 
 .hero{
 
@@ -181,9 +160,6 @@ body::before{
   animation: fadeUp 1.4s ease;
 }
 
-/* =========================
-   BOTONES
-========================= */
 
 .btn{
   border-radius: 14px;
@@ -218,9 +194,6 @@ body::before{
   transform: translateY(-4px);
 }
 
-/* =========================
-   TITULOS
-========================= */
 
 section{
   padding: 100px 0;
@@ -237,9 +210,7 @@ h2{
   color: #64748B !important;
 }
 
-/* =========================
-   CARDS GENERALES
-========================= */
+
 
 .card{
 
@@ -261,8 +232,6 @@ h2{
   transform: translateY(-12px);
   box-shadow: var(--shadow-hover);
 }
-
-/* GLOW */
 
 .card::before{
   content: "";
@@ -310,9 +279,6 @@ h2{
   font-weight: 700;
 }
 
-/* =========================
-   ICONOS
-========================= */
 
 .bi{
   transition: 0.4s ease;
