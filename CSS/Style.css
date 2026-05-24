@@ -2,6 +2,15 @@ body {
   font-family: 'Inter', system-ui, -apple-system, "Segoe UI", sans-serif;
   background-color: #f1f5f9;
   color: #1e293b;
+
+  html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+}
+  
 }
 
 .hero {
